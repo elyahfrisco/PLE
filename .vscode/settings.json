@@ -1,0 +1,19 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#1d9cc4",
+    "titleBar.activeForeground": "#000000",
+    "titleBar.inactiveBackground": "#1d9cc499",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "formatFiles.excludedFolders": [
+    "node_modules",
+    ".vscode",
+    ".git",
+    "dist",
+    ".chrome",
+    "vendor",
+    "public",
+    "storage"
+  ],
+  "formatFiles.excludePattern": "*.{json,txt,lock,xml,yml}"
+}

@@ -1,0 +1,17 @@
+@media print {
+  .btn-print,
+  .preloader,
+  .d-none-print {
+    display: none !important;
+  }
+
+  .invoice {
+    @for $i from 1 through 12 {
+      .col-md-#{$i},
+      .col-#{$i} {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+  }
+}

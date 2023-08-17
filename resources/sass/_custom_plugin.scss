@@ -1,0 +1,155 @@
+/*inertia progress*/
+#nprogress {
+  z-index: 9999 !important;
+
+  .bar {
+    z-index: 9999 !important;
+    height: 2px !important;
+  }
+
+  .spinner {
+    z-index: 9999 !important;
+    right: 50% !important;
+  }
+}
+
+/**/
+
+.select2-container {
+  .select2-selection {
+    border-radius: 0px;
+    height: 40px !important;
+    border: none;
+  }
+}
+
+.select2.mb + .select2-container {
+  margin-bottom: 1rem !important;
+}
+
+.multiselect {
+  &.is-searchable .multiselect-input,
+  .multiselect-input {
+    min-height: 43.5px !important;
+    height: auto;
+  }
+
+  .multiselect-clear {
+    height: 34px;
+  }
+
+  .multiselect-placeholder {
+    text-transform: lowercase;
+  }
+
+  .multiselect-option {
+    cursor: pointer;
+
+    &.is-selected {
+      // border: $lpdl 1px solid;
+    }
+  }
+
+  .multiselect-search {
+    min-height: 41px;
+  }
+}
+
+body:not(.layout-fixed) .main-sidebar {
+  // min-height: 100vh;
+}
+
+.btn {
+  > i {
+    font-size: 12px;
+  }
+
+  &.text-white {
+    color: white !important;
+  }
+}
+
+/*icheck*/
+.icheck-sm {
+  input + label::before {
+    width: 18px !important;
+    height: 18px !important;
+    top: 1.5px !important;
+  }
+
+  input:checked + label::after {
+    width: 4px !important;
+    height: 8px !important;
+    top: 1.5px !important;
+  }
+}
+
+/*datatable*/
+.dataTables_wrapper {
+  margin-top: 20px;
+
+  .dataTables_length {
+    > label {
+      select {
+        // width: auto !important;
+      }
+    }
+  }
+
+  [aria-label^="Actions"] {
+    max-width: 66px !important;
+    width: 66px !important;
+  }
+
+  .row:nth-child(2) {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+
+    > .col-sm-12 {
+      padding: 0;
+
+      .table thead th {
+        border-bottom: none !important;
+        border-top: none !important;
+      }
+    }
+  }
+}
+
+/*toast*/
+.toast-container.toast-bottom-right {
+  bottom: 50px !important;
+}
+
+/*perfect scroll*/
+#planningCalendar.modal {
+  .session-activity > .ps {
+    height: 60px;
+  }
+}
+
+/* popover */
+.popover {
+  .popover-header {
+    background-color: $lpdl;
+    color: white;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.badge {
+  font-weight: 200;
+  line-height: 1.25;
+
+  &-danger {
+    background-color: #fb4f38;
+  }
+
+  &.border-white {
+    border: solid 1px white !important;
+  }
+}

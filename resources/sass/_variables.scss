@@ -1,0 +1,32 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Rubik", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$lpdl: #1d9cc4;
+$guest-mode: #30b1ad;
+$contrastlpdl: 50;
+$base-light: #45bee4;
+$error_validation: #ff483b;
+$error_validation2: #ffde3b;
+$btn_step: #ffde3b;
+
+:root {
+  --base: $lpdl;
+  --base-light: $base-light;
+}

@@ -1,0 +1,190 @@
+body {
+  .main-sidebar .brand-link {
+    min-height: 175px;
+
+    img {
+      max-width: 90px;
+      transition: 1s;
+    }
+  }
+
+  .nav-sidebar .nav-link > .right,
+  .nav-sidebar .nav-link > p > .right {
+    right: 0rem;
+  }
+
+  &.sidebar-collapse {
+    .main-sidebar .brand-link img {
+      width: 100% !important;
+      max-width: 90px !important;
+      transition: 0.3s;
+    }
+
+    .nav-sidebar .nav-link > .right {
+      right: -5px;
+      top: 0.6rem;
+      font-size: 10px;
+      border-radius: 50%;
+      padding: 4px 6px;
+    }
+  }
+
+  &:not(.sidebar-collapse) [data-widget="pushmenu"] {
+    opacity: 0.8;
+
+    i {
+      &.exp {
+        display: inline;
+      }
+
+      &.min {
+        display: none;
+      }
+    }
+  }
+
+  &.sidebar-collapse [data-widget="pushmenu"] {
+    i {
+      &.exp {
+        display: none;
+      }
+
+      &.min {
+        display: inline;
+      }
+    }
+  }
+}
+
+.main-sidebar {
+  background-color: $lpdl;
+
+  &.guest-mode {
+    background-color: $guest-mode !important;
+  }
+
+  .brand-link {
+    border-bottom: none !important;
+  }
+
+  .sidebar {
+    a {
+      color: white !important;
+      font-size: 16px;
+    }
+
+    .badge-count {
+      padding: 4px 6px;
+      font-size: 11px;
+      background: rgba(white, 0.8);
+    }
+  }
+}
+
+.main-header.navbar {
+  background-color: $lpdl !important;
+
+  &.guest-mode {
+    background-color: $guest-mode !important;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 25px;
+    padding: 5px 1rem !important;
+
+    .badge {
+      font-size: 10px;
+    }
+  }
+}
+
+/*form*/
+.content-wrapper {
+  min-height: calc(100vh - (57px + 56px)) !important;
+
+  #btnBackHistory {
+    font-size: 24px;
+  }
+
+  #pageTitle {
+    font-size: 24px;
+    font-weight: 400;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+
+  > .content {
+    .validation-error {
+      color: $error_validation;
+      font-size: 13px;
+    }
+  }
+}
+
+/*modal*/
+.modal .validation-error {
+  color: $error_validation;
+  font-size: 13px;
+}
+
+.modal-backdrop.show {
+  backdrop-filter: blur(2px);
+}
+
+/*App Components styles*/
+
+.card {
+}
+
+/* custom class*/
+
+.pointer {
+  cursor: pointer;
+}
+
+.modal-header {
+  cursor: move;
+}
+
+.table.min {
+  th,
+  td {
+    padding: 5px;
+  }
+}
+
+/*color*/
+
+.bg-default {
+  background-color: $lpdl;
+}
+
+.text-default {
+  color: $lpdl;
+}
+
+/* table action*/
+.column-actions {
+  text-align: right;
+
+  & > .btn {
+    padding: 0px 5px;
+    margin-bottom: 5px;
+
+    &:not(.btn:first-child) {
+      margin-left: 5px;
+    }
+  }
+}
+
+.pass-category-dispo,
+.pass-dispo {
+  label {
+    font-weight: 500 !important;
+    letter-spacing: 2px;
+    font-size: 0.97rem;
+  }
+}

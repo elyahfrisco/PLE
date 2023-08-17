@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "vue-cal/dist/vuecal.css";
+
+:root {
+  --base: #1d9cc4;
+  --base-light: #45bee4;
+  --lighten-percentage: 20%;
+  --darken-precentage: 15%;
+}

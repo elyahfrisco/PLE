@@ -1,0 +1,47 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} {
+          #{$prop}: $length !important;
+        }
+      }
+    }
+  }
+}
+
+// Custom
+@import "custom";
+@import "unauth";
+@import "app_custom";
+@import "custom_plugin";
+@import "custom_component";
+
+@import "~admin-lte/dist/css/adminlte.css";
+@import "~admin-lte/plugins/fontawesome-free/css/all.min.css";
+@import "~admin-lte/plugins/toastr/toastr.min.css";
+@import "~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css";
+@import "~admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css";
+@import "~admin-lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css";
+@import "@vueform/multiselect/themes/default.css";
+@import "~vue-cal/dist/vuecal.css";
+@import "./hover/hover-min.css";
+@import "~vue-loading-overlay/dist/vue-loading.css";
+@import "~vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css";
+@import "~animate.css/animate.min.css";
+
+@import "vue_cal";
+@import "ckeditor_content_styles";
+@import "print";
